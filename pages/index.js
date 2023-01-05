@@ -17,6 +17,11 @@ export default function Home({ articles }) {
               <Image
                 src={article.urlToImage}
                 alt={`Imagen for the article '${article.title}'`}
+                width={450}
+                height={300}
+                layout='responsive'
+                quality={50}
+                priority={index < 2}
               />
               <h2>{article.title}</h2>
               <p>{article.description}</p>
